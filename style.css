@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Prompt', 'Bebas Neue', Verdana;
+    font-weight: 500;
+}
+.container{
+    max-width: 1200px;
+    display: flex;
+    margin: auto;
+    height: 100%;
+    margin:0 auto;
+    align-items: center;
+    padding: 0.2%;
+}
+header
+{
+    background-color: beige;
+}
+.menu_sup{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: aquamarine;
+}
+.logo_top{
+    width: 150px;
+    height: 110px;
+    background-color: blue;
+    text-align: center;
+    align-self: center;
+    
+}
+.logo_top img{
+    width: 100px;
+    height: 100px;
+}
+.text_top{
+    width: 100%;
+    text-align: center;
+    font-size: 34px;
+    background-color: blueviolet;
+}
+.text_top h1{
+    font-family: 'Bebas Neue';
+}
+
+/* --- sobre_curso --- */
+
+.sobre_box1,
+.sobre_box2,
+.sobre_box3{
+    display: flex;
+    height: 400px;
+    text-align: center;
+}
+.sobre_box2{
+    flex-direction: row-reverse;
+}
+.box1{
+    align-items: center;
+    align-self: center;
+    padding: 8px;
+    width: 41.67%;
+}
+.box2{
+    width: 58.33%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: calc(100% + 20px);
+}
+.sobre_box1 > .box2{
+    background-image: url(assets/sobreimg.png);
+}
+.sobre_box2 > .box2{
+    background-image: url(assets/sobreimg.png);
+}
+.sobre_box3 > .box2{
+    background-image: url(assets/sobreimg.png);
+}
+
+/* --- box_modulos --- */
+
+section.box_modulos{
+    position: relative;
+    z-index: -1;
+    background-color: greenyellow;
+    padding-top: 100px;
+}
+.modulo_single{
+    width: 90%;
+    margin: auto;
+}
+.mod_single1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: blueviolet;
+    border-radius: 20px 20px 6px 6px;
+    margin-top: 20px;
+}
+.mod_single1 img{
+    width: 60px;
+    height: 60px;
+    margin-right: 40px;
+}
+.mod_single1 h1{
+    font-weight: bold;
+    padding: 14px;
+    padding-left: 50px;
+}
+.mod_single2{
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    border-radius: 0px 0px 30px 30px;
+    margin-top: -22px;
+    position: relative;
+    z-index: -1;
+    background-color: aquamarine;
+}
+.mod_single2 h2{
+    height: 100%;
+    font-size: 18px;
+    padding: 6px 28px;
+    padding-top: 30px;
+}
+
+/* --- DEPOIMENTOS --- */
+section.depoimentos > .container{
+    justify-content: space-between;
+}
+.depoimento_box{
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    width: 33.3%;
+    margin: 8px;
+    border-radius: 20px;
+    padding: 8px;
+    background-color: cornflowerblue;
+}
+.depoimento_foto{
+    width: 120px;
+    height: 120px;
+    background-color: yellow;
+    border-radius: 100%;
+    margin: auto;
+    margin-top: 8px;
+}
+.depoimento_foto img{
+    width: 100px;
+}
+.depoimento_avaliacao img{
+    width: 50px;
+}
+.depoimento_text{
+    background-color: gray;
+    padding: 8px;
+    border-radius: 0px 0px 20px 20px;
+}
+.depoimento_text h2{
+    font-size: 16px;
+    text-align: start;
+}
