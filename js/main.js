@@ -11,12 +11,15 @@ $(function() {
     });
   });
   $(function(){
-    $('.titulo').hover(function(){
-      $(this).next('.temas').css('display', 'block');
-      $('.temas').not($(this).next('.temas')).css('display', 'none');
-    });
-    $('.titulo').mouseleave(function(){
-      $('.temas').css('display', 'none');
-    });
+    if($(window).width() > 768) {
+      $('.titulo').hover(function(){
+        $(this).next('.temas').css('display', 'block');
+        $('.temas').not($(this).next('.temas')).css('display', 'none');
+      });
+      $('.titulo').mouseleave(function(){
+        $('.temas').css('display', 'none');
+      });
+    }
   });
+  
   

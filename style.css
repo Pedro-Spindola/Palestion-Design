@@ -16,19 +16,17 @@
 }
 header
 {
-    background-color: beige;
+    background-color: #9f0dba;
 }
 .menu_sup{
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: center;
-    background-color: aquamarine;
 }
 .logo_top{
     width: 150px;
     height: 110px;
-    background-color: blue;
     text-align: center;
     align-self: center;
     
@@ -41,14 +39,22 @@ header
     width: 100%;
     text-align: center;
     font-size: 34px;
-    background-color: blueviolet;
 }
 .text_top h1{
     font-family: 'Bebas Neue';
+    color: #ffffff;
 }
+/**/
 
+.banner{
+    background-color: #a5ff01;
+    height: 600px;
+}
 /* --- sobre_curso --- */
 
+section.sobre_curso{
+    background-image: linear-gradient(to bottom, #a5ff01, #e7fe00, #e7fe00, #470cfa, #470cfa);
+}
 .sobre_box1,
 .sobre_box2,
 .sobre_box3{
@@ -60,10 +66,15 @@ header
     flex-direction: row-reverse;
 }
 .box1{
-    align-items: center;
-    align-self: center;
-    padding: 8px;
+    display: flex;
+    padding: 20px;
     width: 41.67%;
+    height: 100%;
+    background-color: #ffffff;
+    filter: opacity(80%);
+    align-items: center;
+}.box1 h1{
+    text-align: left;
 }
 .box2{
     width: 58.33%;
@@ -83,12 +94,12 @@ header
 
 /* --- BOX_MODULOS --- */
 section.conteudo{
-    background-color: greenyellow;
+    background-image: linear-gradient(to bottom, #470cfa, #9f0dba, #9f0dba, #f7126d, #f7126d);
 }
 section.conteudo > .container{
     padding-top: 100px;
     padding-bottom: 100px;
-    background-color: aquamarine;
+
 }
 .conteudo_menu
 {
@@ -97,24 +108,30 @@ section.conteudo > .container{
     align-items: center;
     justify-content: center;
     width: 100%;
-    background-color: rgb(210, 255, 127);
 }
 .cont_box{
     background-color: #bbbbbb;
     margin: 10px 5px;
-    width: 18%;
+    width: 40%;
     height: 340px;
+    background-image: url(assets/sobreimg.png);
+    background-position: center;
+    border-radius: 20px 20px 20px 20px;
 }
 .titulo{
     padding: 12px;
     text-align: center;
+    background-color: rgb(220, 220, 220);
+    border-radius: 20px 20px 0px 0px;
     border-bottom: 4px solid transparent;
     border-image: linear-gradient(to right, #ffffff00, #00f, #ffffff00) 1;
 }
 .temas{
     text-align: center;
     display: none;
-    background-color: blue;
+    height: calc(100% - 58px);
+    border-radius: 0px 0px 20px 20px;
+    background-color: rgb(200, 200, 200);
 }
 .cont_box h1{
     font-size: 20px;
@@ -124,11 +141,15 @@ section.conteudo > .container{
 }
 /* --- DEPOIMENTOS --- */
 section.depoimentos{
-    background-image: linear-gradient(to right, #ffffff, #eeeeee, #bbbbbb, #eeeeee, #ffffff )
+    background-color: rgb(220, 220, 220);
 }
 section.depoimentos > .container{
     justify-content: space-between;
     padding: 50px 0px;
+}
+.container_slider{
+    display: flex;
+    width: 100%;
 }
 .depoimento_box{
     display: inline-block;
@@ -139,18 +160,22 @@ section.depoimentos > .container{
     height: 400px;
     border-radius: 20px;
     padding: 8px;
-    background-color: cornflowerblue;
+    background-color: rgb(200, 200, 200);
 }
 .depoimento_foto{
     width: 120px;
     height: 120px;
-    background-color: yellow;
     border-radius: 100%;
     margin: auto;
     margin-top: 8px;
 }
 .depoimento_foto img{
     width: 100px;
+}
+.depoimento_avaliacao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .depoimento_avaliacao img{
     width: 50px;
@@ -162,13 +187,13 @@ section.depoimentos > .container{
     border-radius: 0px 0px 20px 20px;
 }
 .depoimento_text h2{
-    font-size: 16px;
+    font-size: 15px;
     text-align: start;
 }
 
 /* --- GARANTIAS --- */
 section.garantias{
-    background-color: rgb(178, 186, 212);
+    background-color: #a5ff01;
 }
 .garantias > .container{
     display: inline;
@@ -186,6 +211,7 @@ section.garantias{
 .selo_garantia h3{
     padding-left: 80px;
     width: 100%;
+    font-size: 18px;
 }
 .vantagens{
     margin: auto;
@@ -196,12 +222,11 @@ section.garantias{
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     grid-template-rows: auto auto;
     grid-gap: 10px 10px;
-    background-color: rgb(255, 172, 47);
 }
 .vantage_single{
     min-width: 200px;
     height: 100px;
-    border: 2px solid purple;
+    border: 2px solid #f7126d;
     border-radius: 20px;
     margin: 25px 0px;
     padding: 5px;
@@ -214,25 +239,27 @@ section.garantias{
 }
 .vantage_icon{
     align-self: center;
-    padding-right: 5px;
+    margin-top: 10px;
+    padding-right: 18px;
 }
 .vantage_text h1{
+    color: #ffffff;
     font-size: 14px;
 }
 .vantage_text h2{
+    color: #ffffff;
     font-size: 8px;
 }
 
 /* --- BIOGRAFIA --- */
 
 section.ator_biografia{
-    background-color: coral;
+    background-color: #470cfa;
 }
 section.ator_biografia > .container{
     align-items: center;
     height: 500px;
     padding: 0px 20px;
-    background-color: aqua;
 }
 .ator img{
     width: 300px;
@@ -243,19 +270,20 @@ section.ator_biografia > .container{
     margin-left: 30px;
 }
 .biografia h1{
+    color: #a5ff01;
     font-weight: bold;
     font-size: 28px;
 }
 .biografia h2{
-    font-weight: 400;
-    font-size: 20px;
+    font-weight: 500;
+    font-size: 18px;
 }
 
 /* --- PERGUNTAS --- */
 
 
 section.box_modulos{
-    background-color: greenyellow;
+    background-image: linear-gradient(to bottom, #470cfa, #9f0dba, #9f0dba, #f7126d, #f7126d);
     padding-top: 50px;
     padding-bottom: 50px;
     min-height: 500px;
@@ -268,23 +296,22 @@ section.box_modulos{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: blueviolet;
+    background-color: rgb(220, 220, 220);
     border-radius: 20px 20px 6px 6px;
     margin-top: 20px;
     cursor: pointer;
 }
 .mod_single1.aberto{
-    background-color: rgb(226, 43, 144);
     border-radius: 20px 20px 0px 0px;
-    transition: 0s;
 }
 .mod_single1 img{
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     margin-right: 40px;
 }
 .mod_single1 h1{
-    font-weight: bold;
+    font-weight: 600;
+    font-size: 20px;
     padding: 14px;
     padding-left: 50px;
 }
@@ -292,17 +319,91 @@ section.box_modulos{
     min-height: 150px;
     align-items: center;
     border-radius: 0px 0px 30px 30px;
-    background-color: aquamarine;
+    background-color: rgb(200, 200, 200);
     display: none;
     padding-bottom: 12px;
-    transition: 0.8s;
 }
 .mod_single2 h2{
     height: 100%;
     font-size: 18px;
+    font-weight: 400;
     padding: 6px 28px;
-    padding-top: 30px;
+    padding-top: 16px;
 }
+
+/* --- CONTATO_WPP --- */
+
+section.contato_wpp{
+    background-color: #a5ff01;
+}
+.contato_wpp > .container{
+    display: block;
+    text-align: center;
+    padding-top: 80px;
+    height: 300px;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: 40px;
+    width: 200px;
+    height: 60px;
+    background-color: rgb(220, 220, 220);
+    border-radius: 22px;
+}
+.btn img{
+    width: 50px;
+    height: 50px;
+}
+.btn h2{
+    font-weight: bold;
+    font-size: 20px;
+}
+/* --- SLICK SLIDER --- */
+.slick-dotted{
+    display: block;
+}
+.slick-dotted ul{
+    display: block;
+	list-style-type: none;
+	text-align: center;
+	position: relative;
+	top:30px;
+}
+
+.slick-dotted li{
+	display: inline-block;
+	margin: 0 7px;
+}
+
+.slick-dotted button:focus{
+	outline: 0;
+}
+
+.slick-dotted li button{
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	color: rgb(200, 200, 200);
+	border-width: 0;
+	background: rgb(200, 200, 200);
+	opacity: 1;
+	cursor: pointer;
+}
+
+li.slick-active button{
+	background: #a5ff01;
+	color: #a5ff01;
+}
+
+.slick-slide:focus 
+{ 
+    outline: none; 
+}
+
+/* --- FIM SLICK SLIDER --- */
 
 /* --- RESPANSIVEL --- */
 
@@ -320,6 +421,21 @@ section.box_modulos{
     .vantage_text h2{
         font-size: 12px;
     }
+
+    /**/
+
+    .selo_garantia img{
+        width: 220px;
+    }
+    .selo_garantia h3{
+        padding-left: 0px;
+        font-size: 16px;
+    }
+    /**/
+    .box1 h1{
+        font-size: 20px;
+    }
+
 }
 
 @media screen and (max-width: 768px)
@@ -330,5 +446,66 @@ section.box_modulos{
         grid-gap: 0px 0px;
         padding: 0px 50px;
     }
-}
+    /*--- ---*/
+    .cont_box{
+        background-color: #bbbbbb;
+        margin: 10px 5px;
+        width: 80%;
+        height: 340px;
+    }
+    .temas{
+        text-align: center;
+        display: block;
+        height: calc(100% - 58px);
+        background-color: rgb(200, 200, 200);
+    }
+    /**/
+    .selo_garantia{
+        display: block;
+        text-align: center;
+        padding: 20px 0px;
+    }
+    .selo_garantia h3{
+        font-size: 14px;
+    }
+    .selo_garantia img{
+        padding-bottom: 20px;
+    }
+    /**/
+    .text_top{
+        font-size: 20px;
+    }
+    .logo_top img{
+        width: 80px;
+        height: 80px;
+        margin-top: 10px;
+    }
+    /**/
+    .sobre_box1,
+    .sobre_box2,
+    .sobre_box3{
+        display: inline-flex;
+        height: 400px;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    .box1{
+        width: 100%;
+    }
+    .box2{
+        width: 100%;
+    }
+    /**/
+    .biografia
+    {
+        margin-left: 0px;
+    }
+    section.ator_biografia > .container{
+        display: block;
+        text-align: center;
+        align-items: center;
+        height: 520px;
+        padding: 20px;
+    }
+}   
 
